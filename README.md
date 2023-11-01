@@ -28,4 +28,4 @@ My passion for statistics is matched with a strong foundation in probability the
 
 - 📘 Facebook: [Edmond](https://www.facebook.com/Edmond Malatji)
 - 🐦 Twitter: [@ed83166](https://twitter.com/Edmond Malepane)
-- 💼 LinkedIn: [Malepane Edmond](https://www.linkedin.com/in/Malepane Edmond)
+- 💼 LinkedIn: [Malepane Edmond](https://[www.linkedin.com/in](https://www.linkedin.com/feed/)https://www.linkedin.com/feed//Malepane Edmond)
