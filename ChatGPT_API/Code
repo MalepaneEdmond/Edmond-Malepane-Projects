@@ -1,4 +1,192 @@
-```python
-# your code here
-print("Hello, World!")
-
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "7mrcAekmpVA6"
+      },
+      "outputs": [],
+      "source": [
+        "# Import the OpenAI library\n",
+        "import openai"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#The Codes\n",
+        "import pandas as pd\n",
+        "import openai\n",
+        "\n",
+        "# Initialize OpenAI API\n",
+        "openai.api_key = ''\n",
+        "\n",
+        "# Create the dataframe\n",
+        "data = {\n",
+        "    'Price': [21269, 16293, 27918, 14924, 20730, 5983, 10664, 19066, 5882, 21222],\n",
+        "    'Age': [5, 9, 3, 8, 3, 8, 3, 8, 10, 10]\n",
+        "}\n",
+        "df = pd.DataFrame(data)\n",
+        "\n",
+        "# Create a DataFrame to store the results for CSV export\n",
+        "results_df = pd.DataFrame(columns=['Iteration', 'Question', 'Answer'])\n",
+        "\n",
+        "# List of questions to ask ChatGPT with context about the dataset\n",
+        "questions = [\n",
+        "    f\"Given a dataset of car prices and ages: {data}, what is the average price?\",\n",
+        "    f\"Given a dataset of car prices and ages: {data}, what is the maximum age?\",\n",
+        "    f\"Given a dataset of car prices and ages: {data}, what is the average price for cars priced below $10,000?\",\n",
+        "    f\"Given a dataset of car prices and ages: {data}, what is the correlation value between price and age?\",\n",
+        "    f\"Given a dataset of car prices and ages: {data}, how many cars are priced above $15,000?\",\n",
+        "    f\"Given a dataset of car prices and ages: {data}, what is the minimum price of the cars?\",\n",
+        "    f\"Given a dataset of car prices and ages: {data}, what is the standard deviation of the car prices?\",\n",
+        "    f\"Given a dataset of car prices and ages: {data}, how many cars are older than 5 years?\",\n",
+        "    f\"Given a dataset of car prices and ages: {data}, what is the median age of the cars?\",\n",
+        "    f\"Given a dataset of car prices and ages: {data}, what is the range of the car prices?\"\n",
+        "]\n",
+        "\n",
+        "# Iterate 10 times\n",
+        "for i in range(10):\n",
+        "    # Use OpenAI API to get answers to the questions\n",
+        "    phrased_answers = {}\n",
+        "    for question in questions:\n",
+        "        response = openai.ChatCompletion.create(\n",
+        "            model=\"gpt-4\",  # Use the appropriate engine/model identifier for ChatGPT-4\n",
+        "            messages=[\n",
+        "                {\"role\": \"system\", \"content\": \"You are a helpful assistant.\"},\n",
+        "                {\"role\": \"user\", \"content\": question}\n",
+        "            ]\n",
+        "        )\n",
+        "        phrased_answers[question] = response['choices'][0]['message']['content']\n",
+        "\n",
+        "    # Store the questions and answers in the results DataFrame\n",
+        "    for q, a in phrased_answers.items():\n",
+        "        results_df = results_df.append({\n",
+        "            'Iteration': f\"Iteration {i + 1}\",\n",
+        "            'Question': q,\n",
+        "            'Answer': a\n",
+        "        }, ignore_index=True)\n",
+        "\n",
+        "# Save the results to a CSV file\n",
+        "results_df.to_csv('phrased_answers.csv', index=False)\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "w_Yj6CSope-w"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import pandas as pd\n",
+        "import openai\n",
+        "\n",
+        "# Initialize OpenAI API\n",
+        "openai.api_key = ''  # API_KEY' with your actual API key\n",
+        "\n",
+        "# Context about the dataset\n",
+        "context = \"\"\"\n",
+        "... Description of the datasets ...\n",
+        "The dataset includes 146,028 dyads of players and referees, with details from players, details from referees,\n",
+        "and details regarding the interactions of player-referees.\n",
+        "\"\"\"\n",
+        "\n",
+        "# List of questions based on the dataset\n",
+        "questions = [\n",
+        "    \"What distribution should be specified for the red card outcome variable?\",\n",
+        "    \"How can you address the non-independence of data points in the analysis?\",\n",
+        "    \"How many control variables or covariates should be incorporated into the model?\",\n",
+        "    \"What statistical method should be employed for the analysis?\",\n",
+        "    \"What could be the resulting odds ratio from the analysis?\"\n",
+        "]\n",
+        "\n",
+        "# Creating a DataFrame to store the results for CSV export\n",
+        "results_df = pd.DataFrame(columns=['Iteration', 'Question', 'Answer'])\n",
+        "\n",
+        "# Iterate 10 times over the questions\n",
+        "for iteration in range(1, 11):\n",
+        "    for question in questions:\n",
+        "        full_prompt = context + question\n",
+        "\n",
+        "        # Use OpenAI API to get an answer to the question\n",
+        "        response = openai.ChatCompletion.create(\n",
+        "            model=\"gpt-4\",\n",
+        "            messages=[\n",
+        "                {\"role\": \"system\", \"content\": \"You are a helpful assistant.\"},\n",
+        "                {\"role\": \"user\", \"content\": full_prompt}\n",
+        "            ]\n",
+        "        )\n",
+        "        answer = response.choices[0].message.content  # Extracting the generated answer\n",
+        "\n",
+        "        # Store the iteration number, question, and answer in the results DataFrame\n",
+        "        results_df = results_df.append({\n",
+        "            'Iteration': iteration,\n",
+        "            'Question': question,\n",
+        "            'Answer': answer\n",
+        "        }, ignore_index=True)\n",
+        "\n",
+        "# Save the results to a CSV file\n",
+        "results_df.to_csv('/content/phrased_answers.csv', index=False)\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "l35ONxqApnq3"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Box plot\n",
+        "import matplotlib.pyplot as plt\n",
+        "\n",
+        "# Data provided for the box-and-whisker plot\n",
+        "chatgpt_4w_covariates = [5, 4, 6, 1, 7, 5, 6, 4, 5, 5]\n",
+        "chatgpt_4_covariates = [5, 6, 4, 5, 3, 4, 5, 4, 3, 4]\n",
+        "humans_covariates = [7, 6, 6, 3, 4, 3, 6, 3, 6, 1, 0, 1, 2, 2, 2, 2, 2, 2, 2, 3, 4, 2, 3, 1, 2, 1, 2, 1, 6]\n",
+        "\n",
+        "# Creating the box-and-whisker plot with specified colors\n",
+        "plt.figure(figsize=(10, 6))\n",
+        "bplot = plt.boxplot(\n",
+        "    [chatgpt_4w_covariates, chatgpt_4_covariates, humans_covariates],\n",
+        "    labels=[\"ChatGPT-4W\", \"ChatGPT-4\", \"Humans\"],\n",
+        "    patch_artist=True  # Enables filling of the boxes with color\n",
+        ")\n",
+        "\n",
+        "# Specifying colors for each box\n",
+        "colors = ['blue', 'green', 'purple']\n",
+        "for patch, color in zip(bplot['boxes'], colors):\n",
+        "    patch.set_facecolor(color)\n",
+        "\n",
+        "plt.title('Colored Box-and-Whisker Plot of Number of Covariates')\n",
+        "plt.xlabel('Groups')\n",
+        "plt.ylabel('Number of Covariates')\n",
+        "plt.grid(True)\n",
+        "plt.show()"
+      ],
+      "metadata": {
+        "id": "JThxtkGlpu18"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
