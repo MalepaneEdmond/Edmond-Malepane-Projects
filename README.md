@@ -31,7 +31,7 @@ I am a dedicated and driven Artificial Intelligence Intern and Business Analyst,
 - Built sentiment analysis and text classification models using machine learning and deep learning frameworks.
 - **Responsibilities**: Data collection, preprocessing, model training and performance evaluation.  
 - **Technologies Used**: Python, TensorFlow, Pandas and Scikit-learn.  
-- [View the project](#)
+- [View the project](Sentiment-AnalysNLP_Sentiment_Analysis_and_Text_Classification)
 
 ### 2. Computer Vision: Object Detection and Image Classification
 - Developed models for object detection and image classification using convolutional neural networks.
