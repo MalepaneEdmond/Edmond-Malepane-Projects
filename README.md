@@ -1,31 +1,101 @@
-# MY_first_repository_edmond
-Statistics, Data Science, and Machine Learning Projects
+# 👋 Welcome to My Data Science & AI Portfolio
 
-<p align="left">
-  <img src="https://komarev.com/ghpvc/?username=YourUsername" alt="YourUsername"/> 
-</p> 
+Welcome to my GitHub profile! I'm a passionate data science enthusiast, currently working as a **Business Analyst Intern at Mercedes-Benz South Africa**. With a strong foundation in **Data Science**, **Machine Learning**, and **Artificial Intelligence**, I am dedicated to creating impactful data-driven solutions.
 
-<h1 align="center"> Hi, I'm Edmond! 👋 </h1>
+## 💼 About Me
 
-<h3> 🧔 &nbsp; About Me 👇 </h3>
+I am a highly motivated and detail-oriented data professional with a background in mathematics, statistics, and data science. My expertise spans across **machine learning**, **data engineering**, and **data analysis**, with experience in **Python**, **Azure**, **Power BI**, and **SQL**. I am currently focused on applying my skills in the field of **Artificial Intelligence** to solve real-world challenges.
 
-<p><em>I am an MSc student exploring the <strong>"Limitations of Conversational Agents for Statistical Analysis"</strong> at <a href="https://www.aims.ac.za/">AIMS South Africa</a>, affiliated with the <a href="https://www.uct.ac.za/">University of Cape Town</a></em> 📚
+My educational background includes:
 
-My passion for statistics is matched with a strong foundation in probability theory, time series analysis, generalized linear models, and multivariate analyses, all underpinned by rigorous training in R Studio. I'm particularly proud of my honours project, "Variable Selection in Multiple Linear Regression: An application to the determinants of life expectancy," which showcased my data analytical abilities.
+- **BSc in Mathematics and Statistics**
+- **BSc in Statistics**
+- **MSc in Mathematical Sciences**
+- **Certified Azure Data Scientist, Azure Data Engineer, and Power BI professional**
 
-<h3> 👨‍💻 &nbsp; Learning ... </h3>
+I thrive on solving complex problems and am constantly seeking opportunities to enhance my skills in **data science**, **AI**, and **cloud technologies**. Through my projects and experience, I aim to contribute to the growing field of **AI** by developing innovative solutions that drive business success.
 
-- 🤔 &nbsp; <em>Deepening my knowledge in Data Science and Machine Learning.</em>
-- ⏳ &nbsp; <em>Expanding my expertise in Python, Statistics for Data Science, and Biostatistics.</em>
-- 🔍 &nbsp; <em>Aiming to learn Microsoft Power BI, Data Engineering on Azure, and CompTIA Security+.</em>
+## 🚀 My Skills
 
-<h3> ⚙️ &nbsp; Programming Languages & Tools </h3>
+- **Programming Languages:** Python, SQL, R
+- **Data Science & Machine Learning:** Data Preprocessing, Feature Engineering, Regression, Classification, Clustering, Time Series Analysis, NLP, Deep Learning
+- **Tools & Technologies:** 
+  - **Azure:** Azure Machine Learning, Azure Data Engineering, Azure SQL Database
+  - **Power BI & Data Visualisation:** Power BI, Matplotlib, Seaborn
+  - **Libraries & Frameworks:** Pandas, NumPy, Scikit-learn, TensorFlow, Keras, PyTorch, Flask, OpenCV
+  - **Big Data:** Hadoop, PySpark, Apache Kafka
+  - **Databases:** MySQL, PostgreSQL, MongoDB, SQL Server
+- **Data Engineering:** ETL, Data Pipelines, Data Integration, Data Warehousing
+- **Soft Skills:** Critical Thinking, Problem-Solving, Communication, Team Collaboration
 
-- 💻 &nbsp; <em>R</em> | <em>Python</em> | <em>SQL</em>
-- 🌐 &nbsp; <em>Looking forward to adding more!</em>
+## 🔧 My Projects
 
-<h3> 📫 &nbsp; How to reach me: </h3>
+### **1. Car Theft Prevention System (AI-based)**  
+A comprehensive project designed to prevent car theft in South Africa using machine learning, deep learning, and image processing. The system uses dummy objects to simulate driver identification through facial recognition and fingerprint sensing, alongside behaviour learning and alerts.
 
-- 📘 Facebook: [Edmond](https://www.facebook.com/Edmond Malatji)
-- 🐦 Twitter: [@ed83166](https://twitter.com/Edmond Malepane)
-- 💼 LinkedIn: [Malepane Edmond](https://[www.linkedin.com/in](https://www.linkedin.com/feed/)https://www.linkedin.com/feed//Malepane Edmond)
+**Technologies used:** Python, OpenCV, TensorFlow, Keras, Flask
+
+[View the project](#)
+
+### **2. NLP Sentiment Analysis**  
+Developing models for sentiment analysis and text classification, this project focuses on customer reviews and feedback analysis. The model performs sentiment classification and generates insights from user reviews.
+
+**Technologies used:** Python, Scikit-learn, NLP, TextBlob, NLTK
+
+[View the project](#)
+
+### **3. Azure Data Engineering**  
+Worked on implementing a complete data pipeline in **Azure**, automating the ETL process to handle large datasets. This project demonstrates my ability to integrate Azure services like **Azure SQL**, **Azure Data Factory**, and **Power BI** to create data solutions.
+
+**Technologies used:** Azure, SQL, Power BI, Python, ETL
+
+[View the project](#)
+
+---
+
+## 🏆 Certifications
+
+### **Microsoft Certifications**  
+- **Microsoft Certified: Power BI Data Analyst Associate**  
+  *Skills:* Data Models, Numeracy, Key Performance Indicators, Data Cleaning, Analytical Solutions, Business Insights, Datasets, ETL, Report Writing  
+  *Credential ID:* 1BC8FC1FE6AE5DA5  
+
+- **Microsoft Certified: Azure Data Scientist Associate**  
+  *Skills:* Data Models, Explore Data and Train Models, Prepare a Model for Deployment, Analytical Solutions, TensorFlow, PySpark, Statistical Modelling, Dashboards, Deploy and Retrain a Model, ETL  
+  *Credential ID:* 680199540890BA7B  
+
+- **Microsoft Certified: Azure Data Engineer Associate**  
+  *Skills:* Data Models, Pandas, Apache Kafka, Hadoop, Data Quality, ETL, Data Engineering, Dashboards  
+  *Credential ID:* 615EE5A995605A03  
+
+### **IBM Certifications**  
+- **Data Visualization with Python**  
+  *Skills:* Data Models, Analytical Solutions, TensorFlow, PySpark, Dashboards  
+  *Credential ID:* JHVM26VAFCCJ  
+
+- **Python for Data Science, AI & Development**  
+  *Skills:* Big Data Analytics, Pandas, TensorFlow, Generative AI, ETL, Large Language Models (LLM), Dashboards  
+  *Credential ID:* K4VW8YM3TWVS  
+
+- **What is Data Science?**  
+  *Skills:* Big Data Analytics, Attention to Detail  
+  *Credential ID:* GEBYU3V724FD  
+
+### **CertNexus Certifications**  
+- **CertNexus Certification**  
+  *Skills:* Numeracy, Attention to Detail, Data Science, Datasets  
+
+---
+
+## 📈 Let's Connect
+
+I'm always open to new opportunities, collaborations, and discussions about **data science**, **machine learning**, and **AI**. Feel free to reach out to me for any inquiries, ideas, or potential collaborations!
+
+- **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/your-profile/)
+- **Email:** your-email@example.com
+
+---
+
+Thank you for visiting my portfolio! I look forward to connecting with you and sharing my work.  
+
+**Let's build the future with data! 🚀**
