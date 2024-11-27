@@ -53,7 +53,7 @@ I am a dedicated and driven Artificial Intelligence Intern and Business Analyst,
 - Explored the integration of plugins to enhance performance in handling complex datasets.
 - **Outcome**: Provided practical recommendations for tool selection in statistical workflows.
 - **Tools**: Python, ChatGPT API and Jupyter Notebooks.  
-- [View the project](#)
+- [View the project](Edmond_Research.ipynb)
 
 ### 5. Handling Imbalanced Datasets for Anomaly Detection
 - Addressed class imbalance using techniques like SMOTE, undersampling and cost-sensitive learning.
