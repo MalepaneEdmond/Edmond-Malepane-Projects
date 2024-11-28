@@ -5,7 +5,7 @@ This project aims to analyze and predict life expectancy based on various socio-
 
 ## Files:
 - **scripts/analysis.R**: The main R script for loading data, preprocessing, training models, and evaluating performance.
-- **data/life_expectancy.csv**: The dataset containing variables like GDP per capita, literacy rate, health spending, and life expectancy.
+- **data/life_expectancy.csv**: The dataset containing variables like GDP per capita, literacy rate, health spending and life expectancy.
 - **results/plots/**: Contains visualizations such as residual plots predicted vs actual plots, and diagnostic plots.
 - **results/metrics/**: Contains model evaluation metrics, including MSE for each model.
 
@@ -17,7 +17,7 @@ This project aims to analyze and predict life expectancy based on various socio-
 
 2. **Data Preparation**: The data is automatically loaded in the script from `life_expectancy.csv`. The dataset is split into **80% training** and **20% testing** for model validation.
 
-3. **Run the Analysis**: Execute the `analysis.R` script to train and evaluate models. It will output plots and evaluation metrics, including MSE.
+3. **Run the Analysis**: Execute the `Script` script to train and evaluate models. It will output plots and evaluation metrics, including MSE.
 
 4. **View Results**: Check the `results/plots` folder for visualizations and the `results/metrics/model_comparison.csv` for model comparison metrics.
 
