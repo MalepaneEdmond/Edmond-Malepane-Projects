@@ -2,7 +2,7 @@
 
 ## 1. Model Performance Evaluation
 
-The primary objective of this analysis was to assess the predictive ability of various regression models (Stepwise Regression, LASSO Regression, and the All-Variable Enter Method) in forecasting life expectancy based on socio-economic and healthcare-related variables. The models were evaluated using multiple performance metrics to determine their accuracy and efficiency.
+The primary objective of this analysis was to assess the predictive ability of various regression models (Stepwise Regression, LASSO Regression and the All-Variable Enter Method) in forecasting life expectancy based on socio-economic and healthcare-related variables. The models were evaluated using multiple performance metrics to determine their accuracy and efficiency.
 
 The **evaluation metrics** included:
 - **Mean Error (ME)**: Represents the bias in the predictions.
@@ -29,7 +29,7 @@ From these results, it’s evident that **LASSO Regression** outperformed the ot
 - **Lower MAPE**: LASSO achieved a **MAPE of 3.9063**, compared to **Stepwise**'s **3.9644**.
 - **Higher Adjusted R²**: **0.7962** compared to **Stepwise**'s **0.7642**.
 
-The **All-Variable Enter Method** performed slightly worse, with a higher **MAPE** and a lower **R² Adj (0.7725)**, indicating that the inclusion of all variables didn’t provide a substantial improvement in the model’s predictive power.
+The **All-Variable Enter Method** performed slightly worse, with a higher **MAPE** and a lower **R² Adj (0.7725)** indicating that the inclusion of all variables didn’t provide a substantial improvement in the model’s predictive power.
 
 ---
 
@@ -43,7 +43,7 @@ On the training set, all models performed similarly, with the **Adjusted R²** v
 | **LASSO**            | 6.6453e-15  | 3.3125    | 2.505     | -0.2331    | 3.6240     | 0.8203   |
 | **All-Variable Enter** | 1.1042e-14 | 3.3092    | 2.522     | -0.2319    | 3.6442     | 0.8193   |
 
-Despite the slight difference in **R² Adj**, the performance of the models on the training set suggests that all three models fit the data well, with **Stepwise** and **LASSO** being nearly identical in their ability to explain the variation in life expectancy.
+Despite the slight difference in **R² Adj**, the performance of the models on the training set suggests that all three models fit the data well with **Stepwise** and **LASSO** being nearly identical in their ability to explain the variation in life expectancy.
 
 ---
 
@@ -55,39 +55,39 @@ Despite the slight difference in **R² Adj**, the performance of the models on t
 
 ### All-Variable Enter Method:
 - While the **All-Variable Enter Method** showed **lower MAPE** values (**3.9317**) compared to **Stepwise** and **LASSO**, it was the least effective model overall. It had the **lowest R² Adj** value of **0.7725**, indicating it was less efficient in explaining the variation in life expectancy.
-- Including all variables can be useful for exploratory analysis, but it often leads to a more complex model without significant improvements in prediction accuracy, especially when some variables may not contribute meaningfully.
+- Including all variables can be useful for exploratory analysis, but it often leads to a more complex model without significant improvements in prediction accuracy especially when some variables may not contribute meaningfully.
 
 ---
 
 ## 5. Statistical Significance and Practical Implications
 
 ### Performance on Test vs. Training Data:
-- On the training data, all models showed similar performance, indicating that they fit the data well. However, the real test of a model’s performance lies in its ability to generalise to new, unseen data (i.e., the test set).
+- On the training data, all models showed similar performance indicating that they fit the data well. However, the real test of a model’s performance lies in its ability to generalise to new, unseen data (i.e., the test set).
 - **LASSO**, with its lower **MAPE** and **RMSE** values on the test set, demonstrated superior generalisability, meaning it is better at making accurate predictions for life expectancy across countries based on the selected predictors.
 
 ### Explaining Variance in Life Expectancy:
 - **LASSO’s Adjusted R² of 0.7962** means that the model was able to explain **79.62%** of the variation in life expectancy based on the predictors used in the analysis. This is a strong result, suggesting that the socio-economic and healthcare factors included in the model have a significant influence on life expectancy.
-- The **Stepwise** and **All-Variable Enter Method** models also performed well, with **R² Adj** values of **0.7642** and **0.7725**, respectively. These models explained approximately **76%** of the variation, but LASSO’s slightly higher value suggests a better fit and more accurate predictions.
+- The **Stepwise** and **All-Variable Enter Method** models also performed well, with **R² Adj** values of **0.7642** and **0.7725** respectively. These models explained approximately **76%** of the variation, but LASSO’s slightly higher value suggests a better fit and more accurate predictions.
 
 ---
 
 ## 6. Limitations of the Study
-- **Multicollinearity**: Some predictors, such as **GDP per capita** and **healthcare spending**, are highly correlated, which can affect the stability of regression models. However, LASSO handled multicollinearity effectively by shrinking coefficients, making it more robust to this issue.
-- **Data Quality**: The study relied on secondary data from the **World Bank**, which may have some missing or inconsistent data points. Imputation techniques were used to fill in missing data, but the overall quality of the dataset can still impact model accuracy.
+- **Multicollinearity**: Some predictors such as **GDP per capita** and **healthcare spending** are highly correlated which can affect the stability of regression models. However, LASSO handled multicollinearity effectively by shrinking coefficients making it more robust to this issue.
+- **Data Quality**: The study relied on secondary data from the **World Bank** which may have some missing or inconsistent data points. Imputation techniques were used to fill in missing data but the overall quality of the dataset can still impact model accuracy.
 - **Model Assumptions**: All models assume linear relationships between predictors and the dependent variable (life expectancy). Non-linear relationships or interactions between predictors could further improve prediction accuracy.
 
 ---
 
 ## 7. Policy Implications and Recommendations
 Based on the results, the following recommendations can be made:
-- **Investing in Education**: Improving **literacy rates** is a key policy recommendation, as education significantly impacts life expectancy.
-- **Increased Healthcare Spending**: More investment in healthcare infrastructure and services, particularly in underserved regions, can significantly improve life expectancy outcomes.
-- **Ensure Access to Clean Water**: Providing access to clean water is crucial, particularly in developing countries, where water-related diseases are a leading cause of mortality.
-- **Improving Healthcare Workforce**: Increasing the number of healthcare professionals, particularly nurses, can improve care quality and lead to better health outcomes.
+- **Investing in Education**: Improving **literacy rates** is a key policy recommendation as education significantly impacts life expectancy.
+- **Increased Healthcare Spending**: More investment in healthcare infrastructure and services particularly in underserved regions can significantly improve life expectancy outcomes.
+- **Ensure Access to Clean Water**: Providing access to clean water is crucial particularly in developing countries where water-related diseases are a leading cause of mortality.
+- **Improving Healthcare Workforce**: Increasing the number of healthcare professionals particularly nurses can improve care quality and lead to better health outcomes.
 
 ---
 
 ## 8. Conclusion
-The analysis has demonstrated that socio-economic factors, including **literacy rate**, **healthcare spending**, and **access to clean water**, are strong predictors of life expectancy. Among the models tested, **LASSO Regression** proved to be the most accurate, outperforming **Stepwise Regression** and the **All-Variable Enter Method**. These findings provide valuable insights that can guide policy interventions aimed at improving life expectancy, particularly in developing countries where such factors are often key to better public health outcomes.
+The analysis has demonstrated that socio-economic factors, including **literacy rate**, **healthcare spending** and **access to clean water** are strong predictors of life expectancy. Among the models tested, **LASSO Regression** proved to be the most accurate outperforming **Stepwise Regression** and the **All-Variable Enter Method**. These findings provide valuable insights that can guide policy interventions aimed at improving life expectancy, particularly in developing countries where such factors are often key to better public health outcomes.
 
 
