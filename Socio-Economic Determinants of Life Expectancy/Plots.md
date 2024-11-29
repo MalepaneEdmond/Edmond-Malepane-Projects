@@ -2,7 +2,7 @@
 ## Plots
 
 Below are the key visualisations from the analysis:
-### 1. Box-PLot (images/Box.png)
+### 1. Box-PLot (Images/Box.png)
 
 ### 2. Correlation Heatmap
 This heatmap shows the relationships between socio-economic factors and life expectancy.
