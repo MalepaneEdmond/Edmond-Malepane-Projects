@@ -19,7 +19,7 @@ This project aims to analyze and predict life expectancy based on various socio-
 
 3. **Run the Analysis**: Execute the `Script` script to train and evaluate models. It will output plots and evaluation metrics, including MSE.
 
-4. **View Results**: Check the `results/plots` folder for visualizations and the `results/metrics/model_comparison.csv` for model comparison metrics.
+4. **View Results**: Check the `Results and Discussion` folder for visualizations and the `results/metrics/model_comparison.csv` for model comparison metrics.
 
 ## Dependencies:
 - **R version 4.0.0 or higher**.
