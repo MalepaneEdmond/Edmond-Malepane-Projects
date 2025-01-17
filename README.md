@@ -62,7 +62,7 @@ I am a dedicated and driven Artificial Intelligence Intern and Business Analyst,
   - Balanced datasets significantly improved anomaly detection accuracy.
   - Tackled overfitting challenges in minority class predictions.
 - **Tools**: Python, Scikit-learn and Matplotlib.  
-- [View the project](#)
+- [View the project](https://github.com/MalepaneEdmond/Edmond-Malepane-Projects/tree/main/Handling%20Imbalanced%20Datasets%20for%20Anomaly%20Detection)
 
 ---
 
