@@ -1,7 +1,7 @@
 # Portfolio
 
 ## About Me
-I am a dedicated and driven Artificial Intelligence Intern and Business Analyst, passionate about exploring the boundaries of data science and AI to develop impactful solutions. With a strong academic background in mathematics, statistics and data science, coupled with industry experience, I am committed to leveraging data-driven insights for innovation.
+I am a dedicated and driven Artificial Intelligence Intern and Business Analyst, passionate about exploring the boundaries of data science and AI to develop impactful solutions. I have a strong academic background in mathematics, statistics and data science and some industry experience. I am committed to leveraging data-driven insights for innovation.
 
 ---
 
