@@ -45,7 +45,7 @@ I am a dedicated and driven Artificial Intelligence Intern and Business Analyst,
 - **Key Findings**:
   - Literacy rate, healthcare spending and nurse-to-patient ratios significantly influence life expectancy.
   - LASSO regression outperformed stepwise regression in prediction accuracy.
-- **Tools**: Python, Scikit-learn and Pandas.  
+- **Tools**: R studio,MASS, glmnet, car, caret and ggplot2 
 - [View the project](https://github.com/MalepaneEdmond/Edmond-Malepane-Projects/tree/main/Socio-Economic%20Determinants%20of%20Life%20Expectancy)
 
 ### 4. Master's Research: Limitations of Conversational Agents for Statistical Analysis
