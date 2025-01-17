@@ -39,14 +39,14 @@ I am a dedicated and driven Artificial Intelligence Intern and Business Analyst,
 - **Technologies Used**: OpenCV, PyTorch and Matplotlib.  
 - [View the project](#)
 
-### 3. Honours Research: Socio-Economic Determinants of Life Expectancy
+### 3. Honours Research: Variable selection in multiple regression : An application to the determinants of life expectancy
 - Analysed factors like literacy rate, healthcare spending and CO2 emissions to determine their impact on life expectancy across countries.
 - **Methods**: LASSO regression, stepwise regression and predictive modelling.  
 - **Key Findings**:
   - Literacy rate, healthcare spending and nurse-to-patient ratios significantly influence life expectancy.
   - LASSO regression outperformed stepwise regression in prediction accuracy.
 - **Tools**: Python, Scikit-learn and Pandas.  
-- [View the project](#)
+- [View the project](https://github.com/MalepaneEdmond/Edmond-Malepane-Projects/tree/main/Socio-Economic%20Determinants%20of%20Life%20Expectancy)
 
 ### 4. Master's Research: Limitations of Conversational Agents for Statistical Analysis
 - Evaluated ChatGPT-4's capabilities for statistical analysis tasks, identifying strengths and limitations.
