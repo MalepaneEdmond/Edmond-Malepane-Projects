@@ -39,7 +39,7 @@ I am a dedicated and driven Artificial Intelligence Intern and Business Analyst,
 - **Technologies Used**: OpenCV, PyTorch and Matplotlib.  
 - [View the project](#)
 
-### 3. Honours Research: Variable selection in multiple regression : An application to the determinants of life expectancy
+### 3. Variable selection in multiple regression : An application to the determinants of life expectancy
 - Analysed factors like literacy rate, healthcare spending and CO2 emissions to determine their impact on life expectancy across countries.
 - **Methods**: LASSO regression, stepwise regression and predictive modelling.  
 - **Key Findings**:
@@ -48,7 +48,7 @@ I am a dedicated and driven Artificial Intelligence Intern and Business Analyst,
 - **Tools**: R studio,MASS, glmnet, car, caret and ggplot2 
 - [View the project](https://github.com/MalepaneEdmond/Edmond-Malepane-Projects/tree/main/Socio-Economic%20Determinants%20of%20Life%20Expectancy)
 
-### 4. Master's Research: Limitations of Conversational Agents for Statistical Analysis
+### 4. Limitations of Conversational Agents for Statistical Analysis
 - Evaluated ChatGPT-4's capabilities for statistical analysis tasks, identifying strengths and limitations.
 - Explored the integration of plugins to enhance performance in handling complex datasets.
 - **Outcome**: Provided practical recommendations for tool selection in statistical workflows.
